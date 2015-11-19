@@ -75,6 +75,18 @@ public class Rational{
 	}
     }
 
+    public void add(Rational aleks){
+	if (aleks.den == den)
+	    num += aleks.num;
+	else
+	    
+
+
+    }
+
+
+
+    
     public static void main(String[] args){
 
 	
