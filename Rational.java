@@ -76,8 +76,6 @@ public class Rational{
     }
 
     public void add(Rational aleks){
-	tempDen = den;
-	tempNum = num;
 	if (den == aleks.den)
 	    num += aleks.num;
 	else {
@@ -86,7 +84,14 @@ public class Rational{
 		num += num + (den * alex.num);
     }
 
-
+	public void subtract(Rational aleks){
+	if (den == aleks.den)
+	    num -= aleks.num;
+	else {
+		den *= alex.den;
+		num *= alex.den;
+		num -= num + (den * alex.num);
+    }
 
     
     public static void main(String[] args){
