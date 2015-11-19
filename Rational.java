@@ -76,12 +76,14 @@ public class Rational{
     }
 
     public void add(Rational aleks){
-	if (aleks.den == den)
+	tempDen = den;
+	tempNum = num;
+	if (den == aleks.den)
 	    num += aleks.num;
-	else
-	    
-
-
+	else {
+		den *= alex.den;
+		num *= alex.den;
+		num += num + (den * alex.num);
     }
 
 
